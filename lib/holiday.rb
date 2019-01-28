@@ -59,7 +59,8 @@ def all_holidays_with_bbq(holiday_hash)
   
   holiday_hash.each do |season, data|
     data.each do |holiday, array|
-      array.keys {|item| item == "BBQ"}
+      array.each do |item|
+        keys {|item| item == "BBQ"}
     end
   end
           
